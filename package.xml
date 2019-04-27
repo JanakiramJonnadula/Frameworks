@@ -12,6 +12,7 @@
     <types>
         <members>Aura_Continuation_Demo</members>
         <members>LWC_Continuation_Demo</members>
+        <members>Frameworks_UtilityBar</members>
         <name>FlexiPage</name>
     </types>
     <types>
