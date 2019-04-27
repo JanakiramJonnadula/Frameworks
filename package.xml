@@ -10,6 +10,11 @@
         <name>ApexPage</name>
     </types>
     <types>
+        <members>Aura_Continuation_Demo</members>
+        <members>LWC_Continuation_Demo</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
         <members>FW_Service_Status_Log__c</members>
         <members>LWC_Continuation_Demo</members>
         <members>Aura_Continuation_Demo</members>        
