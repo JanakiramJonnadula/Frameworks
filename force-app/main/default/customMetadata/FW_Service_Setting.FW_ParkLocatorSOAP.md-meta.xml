@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>FW ParkLocatorSOAP</label>
+    <protected>false</protected>
+    <values>
+        <field>Compressed__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>CustomCredential__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>EndpointParameters__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Endpoint__c</field>
+        <value xsi:type="xsd:string">https://th-apex-soap-service.herokuapp.com/service/parks</value>
+    </values>
+    <values>
+        <field>HeaderName__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>InputClass__c</field>
+        <value xsi:type="xsd:string">FW_ParkLocatorServiceInput</value>
+    </values>
+    <values>
+        <field>LogAdmin__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>LogFail__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>LogRequestPII__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>LogRequest__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>LogResponsePII__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>LogResponse__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>LogStatus__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>LogWithCallout__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>MockResponse__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>NamedCredential__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>NotifyFailure__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Operation__c</field>
+        <value xsi:type="xsd:string">byCountry</value>
+    </values>
+    <values>
+        <field>OutputClass__c</field>
+        <value xsi:type="xsd:string">FW_ParkLocatorServiceOutput</value>
+    </values>
+    <values>
+        <field>ProcessingClass__c</field>
+        <value xsi:type="xsd:string">FW_ParkLocatorServiceCallout</value>
+    </values>
+    <values>
+        <field>Strategy__c</field>
+        <value xsi:type="xsd:string">FW_Service_SOAP</value>
+    </values>
+    <values>
+        <field>Timeout__c</field>
+        <value xsi:type="xsd:double">30000.0</value>
+    </values>
+</CustomMetadata>

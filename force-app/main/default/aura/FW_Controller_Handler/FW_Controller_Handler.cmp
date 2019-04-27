@@ -1,0 +1,7 @@
+<aura:component controller="FW_Transformation_Controller" implements="flexipage:availableForAllPageTypes" access="global">
+
+    <aura:handler event="c:FW_Controller_Request" action="{!c.onControllerRequest}"/>
+
+    <c:FW_Controller_Proxy aura:id="proxy" />
+
+</aura:component>

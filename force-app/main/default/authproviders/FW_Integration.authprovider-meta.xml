@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <consumerKey>3MVG9FG3dvS828gI6i0uwOK4L8lqGYZSM4k9PZhP9HZea2vyhu7RlEjLQKm15F66mYi6sAxgsxUgGeaDPQKKL</consumerKey>
+    <consumerSecret>4dV1Zv+lYzR0+Mq/jtPMMZ0bPs7Iu1xa</consumerSecret>
+    <defaultScopes>full refresh_token</defaultScopes>
+    <friendlyName>FW Integration</friendlyName>
+    <iconUrl>https://test.salesforce.com/icons/salesforce-black.png</iconUrl>
+    <includeOrgIdInIdentifier>true</includeOrgIdInIdentifier>
+    <providerType>Salesforce</providerType>
+    <sendAccessTokenInHeader>false</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
+</AuthProvider>

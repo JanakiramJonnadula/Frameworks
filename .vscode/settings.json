@@ -1,0 +1,12 @@
+{
+    "eslint.nodePath": "c:\\Users\\jjonnadu\\.vscode\\extensions\\salesforce.salesforcedx-vscode-lwc-45.10.0\\node_modules",
+    "terminal.integrated.env.osx": {
+        "SFDX_SET_CLIENT_IDS": "sfdx-vscode"
+    },
+    "terminal.integrated.env.linux": {
+        "SFDX_SET_CLIENT_IDS": "sfdx-vscode"
+    },
+    "terminal.integrated.env.windows": {
+        "SFDX_SET_CLIENT_IDS": "sfdx-vscode"
+    }
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>FW ProductSearchREST</label>
+    <protected>false</protected>
+    <values>
+        <field>InputClass__c</field>
+        <value xsi:type="xsd:string">FW_ProductSearchInput</value>
+    </values>
+    <values>
+        <field>LogAdmin__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>LogFail__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>LogInputPII__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>LogInput__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>LogOutputPII__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>LogOutput__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>LogStatus__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>LogWithCallout__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>NotifyFailure__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>OutputClass__c</field>
+        <value xsi:type="xsd:string">FW_ProductSearchOutput</value>
+    </values>
+    <values>
+        <field>ProcessingClass__c</field>
+        <value xsi:type="xsd:string">FW_ProductSearchHelper</value>
+    </values>
+    <values>
+        <field>ServiceContinuationMethod__c</field>
+        <value xsi:type="xsd:string">processResponse</value>
+    </values>
+    <values>
+        <field>ServiceContinuationTimeout__c</field>
+        <value xsi:type="xsd:double">30.0</value>
+    </values>
+    <values>
+        <field>ServiceContinuation__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>ServiceName__c</field>
+        <value xsi:type="xsd:string">FW_ProductSearchREST</value>
+    </values>
+</CustomMetadata>

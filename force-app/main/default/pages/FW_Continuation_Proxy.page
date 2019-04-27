@@ -1,0 +1,34 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0"
+    controller="FW_Transformation_Controller">
+    <html>
+        <body>
+            <script>
+                var hostname = window.location.hostname;
+                var mydomain = hostname.substr(0, hostname.indexOf("--c"));
+                var lexBaseURL = "https://" + mydomain + ".lightning.force.com";
+
+                window.addEventListener("message", function (event) {
+                    //if (event.origin !== lexBaseURL.toLowerCase()) {
+                        // Not the expected origin: reject message
+                        //return;
+                    //}
+
+                    // Only handle messages we are interested in            
+                    if (event.data.topic === "com.mycompany.proxy") {
+                        var requestName = event.data.requestName;
+                        var containerInput = event.data.requestInput;
+                        containerInput = JSON.stringify(containerInput);
+                        Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.FW_Transformation_Controller.startRequest}', requestName, containerInput, function (result) {
+                            var message = {
+                                invocationId: event.data.invocationId,
+                                topic: event.data.topic,
+                                result: result
+                            };
+                            parent.postMessage(message, lexBaseURL);
+                        });
+                    }
+                }, false);
+            </script>
+        </body>
+    </html>
+</apex:page>

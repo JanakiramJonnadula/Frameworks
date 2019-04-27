@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReTrigger</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>ReTrigger</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/apex.js&quot;)} 
+try
+{ 
+var logID = &#39;{!FW_Service_Status_Log__c.Id}&#39;
+var result = sforce.apex.execute(&quot;FW_Transformation_Controller&quot;, &quot;restartRequest&quot;,{serviceStatusLogID:logID}); 
+alert(result); 
+} 
+catch(err) { 
+txt=&quot;There was an error on this page.\n\n&quot;; 
+txt+=&quot;Error description: &quot; + err.description + &quot;\n\n&quot;; 
+txt+=&quot;Click OK to continue.\n\n&quot;; 
+alert(txt); 
+}</url>
+</WebLink>

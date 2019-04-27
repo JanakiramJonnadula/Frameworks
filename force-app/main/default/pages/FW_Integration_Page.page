@@ -1,0 +1,66 @@
+<apex:page controller="FW_Integration_Controller">
+    
+    <apex:form >
+        <apex:inputText id="state"/>
+        <!-- Invokes the action method when the user clicks this button. -->
+        <!--<apex:commandButton action="{!startRequest}" value="Get Geo Location" reRender="result"/>-->
+        <apex:commandButton onclick="getState('FW_GetGeoLocation', 'UP'); return false;"  value="Get Geo State"/>
+        
+        <apex:inputText id="ip"/>
+        <!-- Invokes the action method when the user clicks this button. -->
+        <!--<apex:commandButton action="{!startRequest}" value="Get Geo Location" reRender="result"/>-->
+        <apex:commandButton onclick="getState('FW_GetGeoCountry', '70.121.55.200'); return false;"  value="Get Geo Country"/>
+    </apex:form>
+
+    <!-- This output text component displays the callout response body. -->
+    <apex:outputText id="result" value="{!result}" />
+    
+    <script type="text/javascript">
+    
+        //Visualforce.remoting.timeout = 120000; // Set timeout at page level
+        
+        function xyz() {
+            FW_Integration_Controller.getresults(
+                handleResult,
+                { buffer: false}
+            );
+        }
+    
+        function getState(requestName, input) {
+            //var containerInput = document.getElementById('ip').value;
+            
+            FW_Integration_Controller.testRequest(
+                requestName,
+                input,
+                handleResult,
+                { buffer: false}
+            );
+    
+            // This remoting call will use the page's timeout value
+            //FW_Integration_Controller.startReadOnlyRequest(
+              //  requestName,
+              //  input,
+              //  handleResult,
+              //  { buffer: false}
+            //);
+            
+            //FW_Integration_Controller.startRequest(
+              //  requestName,
+              //  'AP',
+              //  handleResult,
+              //  { buffer: false}
+            //);
+            
+        }
+    
+        function handleResult(result, event) {
+            if(event.status){
+                alert(result);
+                //alert(result.RestResponse.messages);
+                //document.getElementById('result').innerHtml= JSON.stringify(result);
+            }
+        }
+        
+    </script>
+    
+</apex:page>

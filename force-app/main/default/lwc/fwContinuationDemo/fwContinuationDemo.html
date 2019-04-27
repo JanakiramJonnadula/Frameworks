@@ -1,0 +1,21 @@
+<template>
+    <lightning:card title="LWC Apex Asynchrounouse Callout (Continuation) Demo">
+        <lightning-input type="text" label="Simulated latency (ms):" value={latency}></lightning-input>
+        <!--<lightning:input type="text" label="Product Id:" value="{!v.productId}" />
+        <lightning:button label="Get Product" onclick="{!c.getProduct}" />-->        
+        <div>
+            <lightning-button label="Get All Products" onclick={getProducts}></lightning-button>
+        </div>
+        <template for:each={result.products} for:item="product">
+            <lightning-layout key={result.id}>
+                <!--<lightning-layout-item>
+                    <img src={product.picture} alt="Profile photo" />
+                </lightning-layout-item>-->
+                <lightning-layout-item padding="horizontal-small">
+                    <p>{product.name}</p>
+                </lightning-layout-item>
+            </lightning-layout>                
+        </template>
+        <p>Result : {result.pageSize}</p>
+    </lightning:card>        
+</template>

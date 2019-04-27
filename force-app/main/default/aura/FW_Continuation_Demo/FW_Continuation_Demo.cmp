@@ -1,0 +1,14 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global">
+
+    <aura:attribute name="latency" type="String" default="6000" />
+    <aura:attribute name="result" type="Object" />
+    
+    <aura:registerEvent name="continuationRequest" type="c:FW_Controller_Request"/>
+
+    <lightning:card title="ContinuationBroker Demo">
+        <lightning:input type="text" label="Simulated latency (ms):" value="{!v.latency}" />
+        <lightning:button label="Get All products" onclick="{!c.getProducts}" />   
+        <lightning:textArea label="Result:" value="{!v.result.pageSize}" />
+    </lightning:card>
+
+</aura:component>
