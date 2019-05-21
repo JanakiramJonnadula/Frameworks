@@ -1,4 +1,4 @@
-public with sharing class FW_PlatformEventPublishHelper extends FW_Transformation_REMOTING{
+public without sharing class FW_PlatformEventPublishHelper extends FW_Transformation_REMOTING{
 
     public override object transformInput(Object dataInput){
         FW_PlatformEventPublishInput input = (FW_PlatformEventPublishInput) dataInput;

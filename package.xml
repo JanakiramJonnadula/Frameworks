@@ -55,7 +55,8 @@
         <members>FW_TransformationSetting.FW_ParkLocatorSOAP</members>
         <members>FW_TransformationSetting.FW_ProductSearchREST</members>  
         <members>FW_TransformationSetting.FW_ObjectQueryAPEX</members>  
-        <members>FW_TransformationSetting.FW_PlatformEventPublishAPEX</members>           
+        <members>FW_TransformationSetting.FW_PlatformEventPublishAPEX</members>   
+        <members>FW_TransformationSetting.FW_PlatformEventSubscribeAPEX</members>        
         <name>CustomMetadata</name>
     </types>        
     <types>
@@ -124,7 +125,15 @@
         <members>FW_PlatformEventPublishServiceInput</members>
         <members>FW_PlatformEventPublishServiceOutput</members>
         <members>FW_PlatformEventPublishTest</members>
+        <members>FW_PlatformEventSubscribeHelper</members>
+        <members>FW_PlatformEventSubscribeInput</members>
+        <members>FW_PlatformEventSubscribeOutput</members>        
+        <members>FW_PlatformEventSubscribeTest</members>
         <name>ApexClass</name>
+    </types>
+    <types>
+        <members>FW_Platform_Event_Subscribe</members>
+        <name>ApexTrigger</name>        
     </types>
     <types>
         <members>fwContinuationDemo</members>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <label>FW_PlatformEventPublishAPEX</label>
+    <label>FW_PlatformEventSubscribeAPEX</label>
     <protected>false</protected>
     <values>
         <field>InputClass__c</field>
-        <value xsi:type="xsd:string">FW_PlatformEventPublishInput</value>
+        <value xsi:type="xsd:string">FW_PlatformEventSubscribeInput</value>
     </values>
     <values>
         <field>LogAdmin__c</field>
@@ -44,11 +44,11 @@
     </values>
     <values>
         <field>OutputClass__c</field>
-        <value xsi:type="xsd:string">FW_PlatformEventPublishOutput</value>
+        <value xsi:type="xsd:string">FW_PlatformEventSubscribeOutput</value>
     </values>
     <values>
         <field>ProcessingClass__c</field>
-        <value xsi:type="xsd:string">FW_PlatformEventPublishHelper</value>
+        <value xsi:type="xsd:string">FW_PlatformEventSubscribeHelper</value>
     </values>
     <values>
         <field>ServiceContinuationMethod__c</field>
@@ -64,6 +64,6 @@
     </values>
     <values>
         <field>ServiceName__c</field>
-        <value xsi:type="xsd:string">FW_PlatformEventPublishAPEX</value>
+        <value xsi:nil="true"/>
     </values>
 </CustomMetadata>
