@@ -13,6 +13,7 @@
     "sourceApiVersion": "45.0",
     "packageAliases": {
         "Frameworks": "0Ho1K000000Kyk9SAC",
-        "Frameworks@1.0.0-1": "04t1K000002ZpsHQAS"
+        "Frameworks@1.0.0-1": "04t1K000002ZpsHQAS",
+        "Frameworks@1.0.0-2": "04t1K000002ZpsWQAS"
     }
 }

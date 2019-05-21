@@ -1,9 +1,10 @@
 public without sharing class FW_Service_SOAP extends FW_Service_Base {
 
-    FW_Service_SOAPRequest soapRequest = new FW_Service_SOAPRequest();
+    FW_Service_SOAPRequest soapRequest;
 
     private void prepareServiceRequest() {
         system.debug('SOAPService - prepareServiceRequest');
+        soapRequest = new FW_Service_SOAPRequest();
         if (serviceSetting.Timeout__c != null) soapRequest.timeout_x = integer.ValueOf(serviceSetting.Timeout__c);
         soapRequest.endpoint_x = serviceSettings.serviceEndpoint;
 

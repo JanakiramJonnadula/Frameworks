@@ -125,6 +125,10 @@
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <pageAccesses>
+        <apexPage>FW_Continuation_Proxy</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>FW_Integration_Page</apexPage>
         <enabled>true</enabled>
     </pageAccesses>

@@ -23,15 +23,22 @@ global with sharing virtual class FW_Transformation_Controller {
         // The above query returns a URL like https://my-domain-dev-ed--c.na50.content.force.com/profilephoto/001/A
         // Let's use the two first fragments of that URL to create the VF base URL 
         List<String> fragments = user.fullPhotoUrl.split('\\.');
-        return (fragments[0] + '.' + fragments[1] + '.visual.force.com').toLowerCase();
+        if(user.fullPhotoUrl.contains('.force.'))
+            return (fragments[0] + '.' + fragments[1] + '.visual.force.com').toLowerCase();
+        else
+            return (fragments[0] + '.visualforce.com').toLowerCase();
+        //return URL.getSalesforceBaseUrl().getHost().toLowerCase();//'https://connect-app-4995-dev-ed--c.visualforce.com';
+        
     }
     
     //Remote call handler for the Lightning App/Components    
     @AuraEnabled
     public static object startLightningRequest(String requestName, object containerInput) {    
         
-        FW_Transformation transformation = new FW_Transformation(requestName);       
-        return transformation.execute(containerInput);
+        FW_Transformation transformation = new FW_Transformation(requestName);     
+        object containerOutput = transformation.execute(containerInput);  
+
+        return JSON.serialize(containerOutput);
     }
     
     //Remote call handler for the Visualforce Pages
