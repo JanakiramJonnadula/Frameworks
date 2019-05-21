@@ -23,6 +23,7 @@
     </types>
     <types>        
         <members>FW_Service_Status_Log__c</members>
+        <members>FW_Platform_Event__e</members>
         <members>FW_Global_Setting__mdt</members>
         <members>FW_Service_Header__mdt</members>
         <members>FW_Service_Setting__mdt</members>
@@ -50,9 +51,11 @@
         <members>FW_Service_Setting.FW_Service_StatusLog</members> 
         <members>FW_Service_Setting.FW_ProductSearchREST</members>     
         <members>FW_Service_Setting.FW_ObjectQueryAPEX</members>  
+        <members>FW_Service_Setting.FW_PlatformEventPublishAPEX</members>
         <members>FW_TransformationSetting.FW_ParkLocatorSOAP</members>
         <members>FW_TransformationSetting.FW_ProductSearchREST</members>  
-        <members>FW_TransformationSetting.FW_ObjectQueryAPEX</members>            
+        <members>FW_TransformationSetting.FW_ObjectQueryAPEX</members>  
+        <members>FW_TransformationSetting.FW_PlatformEventPublishAPEX</members>           
         <name>CustomMetadata</name>
     </types>        
     <types>
@@ -114,6 +117,13 @@
         <members>FW_ObjectQueryServiceInput</members>
         <members>FW_ObjectQueryServiceOutput</members>
         <members>FW_ObjectQueryTest</members>
+        <members>FW_PlatformEventPublishHelper</members>
+        <members>FW_PlatformEventPublishInput</members>
+        <members>FW_PlatformEventPublishOutput</members>
+        <members>FW_PlatformEventPublishServiceHelper</members>
+        <members>FW_PlatformEventPublishServiceInput</members>
+        <members>FW_PlatformEventPublishServiceOutput</members>
+        <members>FW_PlatformEventPublishTest</members>
         <name>ApexClass</name>
     </types>
     <types>

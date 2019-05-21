@@ -7,7 +7,7 @@
         <componentInstances>
             <componentInstanceProperties>
                 <name>isAsynchronousCallout</name>
-                <value>true</value>
+                <value>false</value>
             </componentInstanceProperties>
             <componentName>fwControllerHandler</componentName>
         </componentInstances>

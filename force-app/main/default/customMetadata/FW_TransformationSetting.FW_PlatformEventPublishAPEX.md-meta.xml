@@ -1,30 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <label>FW_ObjectQueryAPEX</label>
+    <label>FW_PlatformEventPublishAPEX</label>
     <protected>false</protected>
     <values>
-        <field>Compressed__c</field>
-        <value xsi:type="xsd:boolean">false</value>
-    </values>
-    <values>
-        <field>CustomCredential__c</field>
-        <value xsi:nil="true"/>
-    </values>
-    <values>
-        <field>EndpointParameters__c</field>
-        <value xsi:type="xsd:boolean">false</value>
-    </values>
-    <values>
-        <field>Endpoint__c</field>
-        <value xsi:nil="true"/>
-    </values>
-    <values>
-        <field>HeaderName__c</field>
-        <value xsi:nil="true"/>
-    </values>
-    <values>
         <field>InputClass__c</field>
-        <value xsi:type="xsd:string">FW_ObjectQueryServiceInput</value>
+        <value xsi:type="xsd:string">FW_PlatformEventPublishInput</value>
     </values>
     <values>
         <field>LogAdmin__c</field>
@@ -35,19 +15,19 @@
         <value xsi:type="xsd:boolean">false</value>
     </values>
     <values>
-        <field>LogRequestPII__c</field>
+        <field>LogInputPII__c</field>
         <value xsi:type="xsd:boolean">false</value>
     </values>
     <values>
-        <field>LogRequest__c</field>
+        <field>LogInput__c</field>
         <value xsi:type="xsd:boolean">true</value>
     </values>
     <values>
-        <field>LogResponsePII__c</field>
+        <field>LogOutputPII__c</field>
         <value xsi:type="xsd:boolean">false</value>
     </values>
     <values>
-        <field>LogResponse__c</field>
+        <field>LogOutput__c</field>
         <value xsi:type="xsd:boolean">true</value>
     </values>
     <values>
@@ -56,38 +36,34 @@
     </values>
     <values>
         <field>LogWithCallout__c</field>
-        <value xsi:type="xsd:boolean">true</value>
-    </values>
-    <values>
-        <field>MockResponse__c</field>
         <value xsi:type="xsd:boolean">false</value>
-    </values>
-    <values>
-        <field>NamedCredential__c</field>
-        <value xsi:nil="true"/>
     </values>
     <values>
         <field>NotifyFailure__c</field>
         <value xsi:type="xsd:boolean">false</value>
     </values>
     <values>
-        <field>Operation__c</field>
-        <value xsi:nil="true"/>
-    </values>
-    <values>
         <field>OutputClass__c</field>
-        <value xsi:type="xsd:string">FW_ObjectQueryServiceOutput</value>
+        <value xsi:type="xsd:string">FW_PlatformEventPublishOutput</value>
     </values>
     <values>
         <field>ProcessingClass__c</field>
-        <value xsi:type="xsd:string">FW_ObjectQueryServiceHelper</value>
+        <value xsi:type="xsd:string">FW_PlatformEventPublishHelper</value>
     </values>
     <values>
-        <field>Strategy__c</field>
-        <value xsi:type="xsd:string">FW_Service_APEX</value>
-    </values>
-    <values>
-        <field>Timeout__c</field>
+        <field>ServiceContinuationMethod__c</field>
         <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ServiceContinuationTimeout__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ServiceContinuation__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>ServiceName__c</field>
+        <value xsi:type="xsd:string">FW_PlatformEventPublishAPEX</value>
     </values>
 </CustomMetadata>
